@@ -1,0 +1,78 @@
+<!--pages/index/quickmatch/quickmatch.wxml-->
+<!--快速匹配-->
+<view wx:if="{{matching}}">
+    <view class="matchCircle">
+        <view class="matchState clear">
+            <view class="matchS clear">
+                <view class="num blue blueB">1</view>
+                <view class="txt blue">填写信息并提交</view>
+                <view class="line blueB"></view>
+            </view>
+            <view class="matchS clear">
+
+                <image src="../../images/match.png"></image>
+                <view class="txt blue">等待律师接单</view>
+                <view class="line"></view>
+            </view>
+            <view class="matchS clear">
+                <view class="num">3</view>
+                <view class="txt">立即咨询</view>
+            </view>
+        </view>
+        <view class="refreshCir">
+            <view class="rotat">
+                <image src="../../images/refresh.png"></image>
+            </view>
+            <view class="clear time">
+                <view>{{minute}}</view>
+                <view>:</view>
+                <view>{{second}}</view>
+            </view>
+        </view>
+        <view class="searchLawer">
+            <view class="searchD {{searchMT0? 'searchMT' : ''}}"><image src="../../images/match.png"></image>正在寻找合适的律师</view>
+            <view class="searchD {{searchMT1? 'searchMT' : ''}}"><image src="../../images/match.png"></image>正在匹配律师接单</view>
+            <view class="searchD {{searchMT2? 'searchMT' : ''}}"><image src="../../images/match.png"></image>匹配律师成功</view>
+        </view>
+        <view class="cannotFindLawyer {{cannotFindLawyerT?'cannotFindLawyerT':''}}">找不到相关律师</view>
+        <button class="cancelBtn" hover-class="cancelBtnH" bindtap="cancelSearch">点击取消</button>
+    </view>
+ </view>
+<view wx:else>
+    <view class="matchState clear">
+        <view class="matchS clear">
+            <image src="../../images/match.png"></image>
+            <view class="txt blue">填写信息并提交</view>
+            <view class="line"></view>
+        </view>
+        <view class="matchS clear">
+            <view class="num">2</view>
+            <view class="txt">等待律师接单</view>
+            <view class="line"></view>
+        </view>
+        <view class="matchS clear">
+            <view class="num">3</view>
+            <view class="txt">立即咨询</view>
+        </view>
+    </view>
+    <navigator url="../city/city">
+        <view class="tip {{tipCon? 'tipNow' : ''}}">{{tipCon}}</view>
+        <view class="choose clear">
+            <view class="choose-l">您所在地区</view>
+            <view class="choose-r {{caseType.choosed ? 'choose-r-choosed' : ''}}">{{city.city}}<image src="../../images/arr.png"></image></view>
+        </view>
+    </navigator>
+    <navigator url="../caseType/caseType" open-type="redirect">
+        <view class="choose clear">
+            <view class="choose-l">案件类型</view>
+            <view class="choose-r {{caseType.choosed ? 'choose-r-choosed' : ''}}">{{caseType.caseType}}<image src="../../images/arr.png"></image></view>
+        </view>
+    </navigator>
+    <view class="describe">
+        <text>案情描述（非必填）</text>
+        <textarea placeholder="案件描述请控制在200字以内" maxlength="200" placeholder-class="descP" bindblur="caseDesc" value="{{caseDescribe}}"/>
+    </view>
+    <view class="match">
+        <button class="matchBtn" hover-class="matchBtnH" bindtap="quickmatch">快速匹配</button>
+    </view>
+</view>

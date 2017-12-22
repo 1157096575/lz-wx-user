@@ -1,0 +1,18 @@
+
+<view class="info">
+
+    <view class="NoInfo" wx:if="{{NO==0}}">
+        暂时没有系统信息哦
+    </view>
+
+        <view class="infolist xtinfo" wx:for="{{infolist}}">
+                <view class="headimg">
+                        <image src="../images/system-message.png"></image>
+                </view>
+
+                <view class="tinfo">
+                  {{item.content}}
+                </view>
+        </view>
+
+</view>

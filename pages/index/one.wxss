@@ -1,0 +1,30 @@
+/**index.wxss**/
+.banner{position: relative;}
+.banner image{width:750rpx;height:386rpx;}
+.banner .quickmatch{width:330rpx;height:80rpx; font-size: 30rpx;color: #01bafe; background: #ffffff;position: absolute;bottom:68rpx; left:50%;margin-left:-165rpx;text-align: center;line-height: 80rpx;border-radius: 8rpx;}
+.banner .quickmatchH{background: #01bafe; color: #ffffff;}
+.titleWrap{padding: 10rpx 25rpx 0; height:80rpx; line-height: 70rpx;}
+.titleWrap .title{float: left; font-size: 32rpx;}
+.titleWrap .more{float: right; font-size: 24rpx; color: #01bafe;}
+.hotLawerListWrap{background: #ffffff;height: 290rpx;}
+.hotLawerList{width: 100%;white-space: nowrap;}
+.hotLawerList image{width: 180rpx; height:180rpx;}
+.hotLawerList .hotLawer{margin:0 25rpx; height: 290rpx; padding: 30rpx 0; width: 180rpx; display: inline-block;}
+.hotLawerList .hotLawer view{width: 180rpx; text-align: center;display: block;}
+.hotLawerList .hotLawerImg{width: 180rpx; height:180rpx; overflow: hidden; border-radius: 50%;}
+.hotLawerList .hotLawerName{font-size: 30rpx; margin:15rpx 0 10rpx;height:36rpx;}
+.hotLawerList .hotLawerPosi{font-size: 22rpx; color: #999999;height:40rpx;}
+.vipLawerListWrap{height: 250rpx;}
+.vipLawerList{width: 100%;white-space: nowrap;}
+.vipLawer{width: 270rpx; height: 250rpx; padding:30rpx 25rpx; background: #ffffff; margin-right: 10rpx;display: inline-block; text-align: center;}
+.vipLawer .vipLawerImg{width: 104rpx; height: 104rpx; border-radius: 50%; overflow: hidden; margin: 0 auto;}
+.vipLawer .vipLawerImg image{width: 104rpx; height: 104rpx; }
+.vipLawer .vipLawerText{padding-top: 20rpx; }
+.vipLawerName{font-size: 30rpx;text-overflow:ellipsis; white-space:nowrap; overflow:hidden; height:40rpx;}
+.vipLawerComp, .vipLawerPosi{font-size:22rpx; color: #999999; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;margin-top: 8rpx;height:26rpx;}
+.footerWrap{width: 750rpx; height:98rpx;background: #ffffff;border-top: 1rpx solid #c3c3c3; padding-top: 12rpx;position: fixed; left:0; bottom: 0;}
+.footer{float: left;width: 250rpx; text-align: center;}
+.footer image{width: 48rpx; height:48rpx;}
+.footer view{font-size: 20rpx;}
+.footer .blue{color: #01bafe;}
+page{padding-bottom: 98rpx;}

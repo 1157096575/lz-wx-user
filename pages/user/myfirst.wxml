@@ -1,0 +1,54 @@
+<view class="errorInfo" wx:for="{{errorInfo}}">
+            <!---错误信息提示-->
+            {{errorInfo}}
+</view>
+
+<view>
+    <view class="head">
+        <view class="headimgcontent">
+          <image src="{{headsrc}}" class="headimg"></image>
+        </view>
+        <view class="nav">
+              <text class="username" wx:for="{{username}}">{{item}}</text> 
+              <navigator url="loging" class="nava"   wx:for="{{indexinit}}">登录</navigator>
+              <label wx:for="{{indexinit}}">/</label>
+              <navigator url="create" class="nava"   wx:for="{{indexinit}}">注册</navigator>
+        </view>
+         
+    </view>
+
+    <view class="section">
+        <navigator class="navsection ns1"  bindtap="myorder" data-sj="{{myorderUrl}}" >
+         <label class="icon1"><image src="../images/my_order.png"></image></label>     我的订单
+        </navigator>
+        <navigator class="navsection ns2"  bindtap="sz">
+          <label class="icon2"><image src="../images/my_setting.png"></image></label> 
+        设置
+        
+        </navigator>
+        <navigator class="navsection ns3" url="TC">
+          <label class="icon3"><image src="../images/my_suggest.png"></image></label> 
+        吐槽我们
+        </navigator>
+
+         <navigator class="navsection ns4" url="chargesNotes" open-type="redirect">
+          <label class="icon3"><image src="../images/aboutsf.png"></image></label> 
+            关于收费
+        </navigator>
+    </view>
+</view>
+
+<view class="footerWrap clear">
+  <navigator class="footer home" url="../index/one" open-type="redirect">
+    <image src="../images/tab_home_normal.png"></image>
+    <view>首页</view>
+  </navigator>
+  <view bindtap="talkInfo"  class="footer"  >
+    <image src="../images/tab_consult_normal.png"></image>
+    <view>消息</view>
+  </view>
+  <navigator class="footer" url="../user/myfrist" open-type="redirect">
+    <image src="../images/tab_my_press.png"></image>
+    <view class="blue">我的</view>
+  </navigator>
+</view>

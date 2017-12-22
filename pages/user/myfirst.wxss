@@ -1,0 +1,124 @@
+/* pages/user/index.wxss */
+.head{
+    
+    width: 100%;
+    height:350rpx;
+    background-color: #01BAFE;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+}
+.headimgcontent{
+    height: 190rpx;
+    width: 100%;
+}
+.headimg{
+    margin: 0 auto;
+    width: 190rpx;
+    height: 190rpx;
+}
+.username{
+   font-size: 33rpx;
+    color: #FFFFFF;
+}
+.nav{
+    margin: 60rpx auto;
+    height:40rpx;
+    width:240rpx;
+    font-size: 33rpx;
+    color: #FFFFFF;
+}
+.nava{
+    display: inline-block;
+    width: 40%;
+}
+.navsection{
+    margin-top: 30rpx;
+    height: 89rpx;
+    line-height: 89rpx;
+    padding-left: 111rpx;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 34rpx;
+}
+
+.ns1{
+    background-repeat: no-repeat;
+    background-size: 33rpx 37rpx;
+    /*background-image: url("../images/my_order.png");*/
+    background-position-x: 28rpx;
+    background-position-y: center;
+}
+
+.ns2{
+    background-repeat: no-repeat;
+    background-size: 36rpx 36rpx;
+   /* background-image: url("../images/my_setting.png");*/
+    background-position-x: 28rpx;
+    background-position-y: center;
+}
+
+.ns3{
+    background-repeat: no-repeat;
+    background-size: 36rpx 34rpx;
+  /*  background-image: url("../images/my_suggest.png");*/
+    background-position-y: center;
+}
+
+/*********************************/
+.footerWrap{width: 750rpx; height:98rpx;background: #ffffff;border-top: 1rpx solid #c3c3c3; padding-top: 12rpx;position: fixed; left:0; bottom: 0;}
+.footer{float: left;width: 250rpx; text-align: center;}
+.footer image{width: 48rpx; height:48rpx;}
+.footer view{font-size: 20rpx;}
+page{padding-bottom: 98rpx;}
+.errorInfo{
+    position:absolute;
+    width: 100%;
+    font-size: 30rpx;
+    background-color: #FF655F ;
+    color:white;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+}
+.footer .blue{color: #01bafe;}
+
+
+.icon1{
+    display:inline-block;
+    width: 33rpx;
+    height: 37rpx;
+    margin-left: -82rpx;
+    margin-right: 60rpx;
+}
+
+.icon1>image{
+    width: 100%;
+    height: 100%;
+}
+
+.icon2{
+    display:inline-block;
+    width: 36rpx;
+    height: 36rpx;
+    margin-left: -82rpx;
+    margin-right: 60rpx;
+}
+
+.icon2>image{
+    width: 100%;
+    height: 100%;
+}
+
+.icon3{
+    display:inline-block;
+    width: 36rpx;
+    height: 34rpx;
+    margin-left: -82rpx;
+    margin-right: 60rpx;
+}
+
+.icon3>image{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,5 @@
+/* pages/index/caseType/caseType.wxss */
+.caseTypes-title{height:88rpx; line-height: 88rpx;  font-size: 32rpx; padding-left: 28rpx;}
+.caseTypes-list{padding:25rpx 18rpx; border:1rpx solid #e5e5e5; border-left: 0; border-right: 0; background: #ffffff;}
+.caseTypeItem{float: left; border:1rpx solid #cccccc; width:210rpx; height:64rpx; font-size: 32rpx; text-align: center; line-height: 64rpx; margin:15rpx;}
+.caseTypes-list .current{border-color: #01bafe; color: #01bafe;}

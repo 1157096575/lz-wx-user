@@ -1,0 +1,29 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+body,page{
+  box-sizing: border-box;
+  background: #f4f4f4;
+  color: #666666;
+  font-size: 28rpx;
+  font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei","微软雅黑",Arial,simsun,sans-serif;
+}
+.clear:before, .clear:after {
+	content:"";
+	display:table;
+}
+.clear:after {
+	clear:both;
+}
+view,scroll-view,icon,text,progress,image,audio,vedio,map,canvas,contact-button,template,body,html, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, article, aside, figure, footer, header, hgroup, nav, section,input,button,i,em,s,strong,b, textarea,navigator{
+  padding: 0;margin: 0;
+  box-sizing: border-box;
+}

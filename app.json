@@ -1,0 +1,26 @@
+{
+  "pages":[
+    "pages/index/one",
+    "pages/user/myfirst",
+    "pages/user/loging",
+    "pages/index/city/city",
+    "pages/mes/mes",
+    "pages/mes/systemInfo",
+    "pages/index/caseType/caseType",
+    "pages/index/quickmatch/quickmatch",
+    "pages/index/lawerDetail/lawerDetail",
+    "pages/index/hotLawer/hotLawer",
+    "pages/index/lawerArticles/lawerArticles",
+    "pages/index/articleDetail/articleDetail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#01bafe",
+    "navigationBarTitleText": "华海律正",
+    "navigationBarTextStyle":"white"
+  }
+
+}
+
+
+

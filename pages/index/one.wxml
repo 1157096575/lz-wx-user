@@ -1,0 +1,59 @@
+<!--index.wxml-->
+<view class="banner">
+  <image src="../images/banner.png"></image>
+  <view bindtap="kspp">
+    <view class="quickmatch" hover-class="quickmatchH">快速匹配</view>
+  </view>
+</view>
+<view class="titleWrap clear">
+  <view class="title">热门律师</view>
+  <navigator class="more" url="hotLawer/hotLawer?hotPageTitle=hotPageTitle"> 更多</navigator>
+</view>
+<view class="hotLawerListWrap">
+  <scroll-view class="hotLawerList clear" scroll-x="true" bindscroll="scroll">
+    <block wx:for="{{hotLawyer}}" wx:key="index">
+      <navigator class="hotLawer" url="lawerDetail/lawerDetail?lawyerId={{item.userId}}">
+        <view class="hotLawerImg">
+          <image mode="aspectFill" src="{{item.logo}}"></image>
+        </view>
+        <view class="hotLawerName">{{item.realName}}</view>
+        <!--<view class="hotLawerPosi">律师主任{{item.position}}</view>-->
+      </navigator>
+    </block>
+  </scroll-view>
+</view>
+<view class="titleWrap clear">
+  <view class="title">VIP律师</view>
+  <navigator class="more" url="hotLawer/hotLawer?vipPageTitle=vipPageTitle"> 更多</navigator>
+</view>
+<view class="vipLawerListWrap">
+  <scroll-view class="vipLawerList clear" scroll-x="true" bindscroll="scroll">
+    <block wx:for="{{vipLawyer}}" wx:key="index">
+      <navigator class="vipLawer" url="lawerDetail/lawerDetail?lawyerId={{item.userId}}">
+        <view class="vipLawerImg">
+          <image mode="aspectFill" src="{{item.logo}}"></image>
+        </view>
+        <view class="vipLawerText">
+          <view class="vipLawerName">{{item.realName}}</view>
+          <view class="vipLawerComp">{{item.position}}</view>
+          <!--<view class="vipLawerPosi">{{item.position}}</view>-->
+        </view>
+      </navigator>
+    </block>
+  </scroll-view>
+</view>
+
+<view class="footerWrap clear">
+  <view class="footer home">
+    <image src="../images/tab_home-press.png"></image>
+    <view class="blue">首页</view>
+  </view>
+  <view  class="footer" bindtap="talkInfo">
+    <image src="../images/tab_consult_normal.png"></image>
+    <view>消息</view>
+  </view>
+  <navigator open-type="redirect" class="footer" url="../user/myfirst">
+    <image src="../images/tab_my_normal.png"></image>
+    <view>我的</view>
+  </navigator>
+</view>

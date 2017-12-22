@@ -1,0 +1,23 @@
+/* pages/index/lawerArticles/lawerArticles.wxss */
+.lawerHead{width: 750rpx; background: #01bafe;padding: 40rpx 530rpx 40rpx 25rpx;color: #ffffff;position: relative;}
+.headLeft{width:148rpx; height:148rpx; border-radius: 50%; border:4rpx solid #67d6fe;padding:6rpx;}
+.headLeft view{width: 100%; height:100%; border-radius: 50%; overflow: hidden;}
+.headLeft view image{width:100%;height:100%;}
+.headRight{position: absolute;top:50%; left:185rpx;transform: translateY(-50%);}
+.headLeft view{width: 100%; height:100%; border-radius: 50%; overflow: hidden;}
+.headLeft view image{width:100%;height:100%;}
+.headRight .lawerName{height:44rpx; line-height: 44rpx;font-size: 32rpx;}
+.headRight .lawerMes{min-height: 36rpx; line-height: 36rpx;}
+.tl{padding:35rpx 25rpx 25rpx; font-size: 30rpx; color: #666666;}
+.articles{padding:25rpx;background: #ffffff;border:1rpx solid #e5e5e5;border-left:0; border-right:0;margin-bottom: 30rpx;}
+.articles .title{font-size: 30rpx; color: #333333;padding-bottom: 15rpx;text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.articles .time{font-size: 20rpx; color: #999999;padding-bottom: 13rpx;}
+.articles .content{padding-bottom: 15rpx;text-align: justify;}
+.readData .read, .readData .like{float: left;font-size: 20rpx;}
+.readData .read{margin-right: 45rpx;}
+.readData .read image{width: 26rpx; height:18rpx;vertical-align: middle;margin-right: 5rpx;}
+.readData .like image{width:22rpx; height:21rpx;vertical-align: middle;margin-right: 5rpx;}
+.hasImg{padding-right: 275rpx;position: relative;}
+.artiImg{display: none;}
+.hasImg .artiImg{width:210rpx;height:160rpx; position: absolute;top:25rpx;right:25rpx;display: block;}
+.content{font-size: 30rpx; color: #333333;text-align: justify;}

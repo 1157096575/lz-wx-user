@@ -1,0 +1,32 @@
+<view class="errorInfo" wx:for="{{errorInfo}}">
+            <!---错误信息提示-->
+            {{errorInfo}}
+</view>
+
+<view class="loging">
+    <view class="logingtitle">
+        欢迎来到律正
+    </view>
+   
+    <view class="userinfo">
+        <form bindsubmit="logingUser">
+            <view class="con">
+                     <label class="contenticon3">
+                       <image src="../images/user-name.png"></image>
+                     </label><input type="number" placeholder="请输入账号" name="user" value="{{userphone}}" />
+            </view>
+            <view class="con">
+                     <label class="contenticon4">
+                     <image src="../images/password.png"></image>
+                     </label>
+                     <input placeholder="请输入密码" name="pwd" type="password" value="{{userpwd}}" />
+            </view>
+              <button formType="submit" id="dl">登录</button>
+         
+        </form>
+           <view class="sub">
+                <navigator url="create" class="fw fw1"  >注册新用户</navigator>
+                <navigator url="forgetpwd" class="fw fw2"  >忘记密码？</navigator>
+            </view>
+    </view>
+</view>

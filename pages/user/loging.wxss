@@ -1,0 +1,109 @@
+page,body{
+    background: white;
+}
+input{
+    width: 80%;
+}
+.loging{
+    width: 100%;
+    padding-top: 100rpx;
+}
+.logingtitle{
+    width: 100%;
+    font-size:46rpx;
+    color: #01BAFE;
+    text-align: center;
+}
+.userinfo{
+    width:90%;
+    margin: 100rpx auto;
+    color: #333333;
+    font-size:30rpx;
+}
+.con{
+    height: 100rpx;
+    padding-top: 30rpx;
+    display: flex;
+    border-bottom: solid 1rpx #DEDEDE;
+    justify-content: space-around;
+
+}
+
+
+.yzm{
+    width:52%;
+    margin-left: 8%;
+}
+.getyzm{
+    width: 25%;
+    height:60rpx;
+    color:#999999;
+    background-color: white;
+    border:0;
+    font-size: 23rpx;
+    margin-top: -10rpx;
+}
+.contenticon3{
+    display: inline-block;
+    width: 36rpx;
+    height: 36rpx;    
+}
+.contenticon3>image{
+    width:36rpx;
+    height:36rpx;
+}
+
+.contenticon4>image{
+    width:29rpx;
+    height:36rpx;
+}
+.contenticon4{
+    display: inline-block;
+    width: 29rpx;
+    height: 36rpx;  
+}
+
+.sub{
+    margin-top: 40rpx;
+    display: flex;
+    line-height:60rpx;
+    justify-content: space-between;
+}
+.xy{
+    color: #333333;
+}
+#xyurl{
+    color:#01BAFE;
+}
+#dl{
+    margin-top: 50rpx;
+    color: white;
+    background-color: #01BAFE;
+}
+.yzfgx{
+    display: inline-block;
+    border: solid 1px #DEDEDE;
+    height: 80rpx;
+    margin-top: -20rpx;
+}
+.errorInfo{
+    position:absolute;
+    width: 100%;
+    font-size: 30rpx;
+    background-color: #FF655F ;
+    color:white;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+}
+
+.fw{
+    font-size: 30rpx;
+}
+.fw1{
+    color: #01BAFE;
+}
+
+.fw:active{
+    color: #01BAFE;
+}

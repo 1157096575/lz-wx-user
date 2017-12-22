@@ -1,0 +1,65 @@
+<!--pages/index/lawerDetail/lawerDetail.wxml-->
+<view class="lawerHead">
+    <view class="headLeft">
+        <view><image mode="aspectFill" src="{{lawerMes.logo}}"></image></view>
+    </view>
+    <view class="headRight">
+        <view class="lawerName">{{lawerMes.realName}}律师</view>
+        <view class="lawerMes">{{lawerMes.address}}</view>
+    </view>
+</view>
+<view class="jobs">
+    <view class="title">工作经历</view>
+    <view class="con con1">
+        <view class="line" hidden="{{lawerMes.eduList.length==0}}"></view>
+        <block class="clear" wx:for="{{lawerMes.jobList}}" wx:key="index">
+            <view class="conList">
+                <view class="experLeft">
+                    <image src="../../images/experience.png"></image> 
+                </view>
+                <view class="experRight">
+                    <view class="lastLine" hidden="{{lawerMes.jobList.length==index+1?false:true}}"></view>
+                    <view class="experTime"><view class="experT">{{item.beginTime}}</view><view class="yi">—</view><view class="experT">{{item.endTime}}</view></view>
+                    <view class="clear experJob">
+                        <view class="experComp">{{item.name}}</view>
+                        <view class="experPos">{{item.position}}</view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>
+<view class="edu">
+    <view class="title">教育经历</view>
+    <view class="con con1">
+        <view class="line" hidden="{{lawerMes.eduList.length==0}}"></view>
+        <block wx:for="{{lawerMes.eduList}}" wx:key="index">
+            <view class="conList">
+                <view class="experLeft">
+                    <image src="../../images/experience.png"></image> 
+                </view>
+                <view class="experRight">
+                    <view class="lastLine" hidden="{{lawerMes.eduList.length!=index+1}}"></view>
+                    <view class="experTime"><view class="experT">{{item.beginTime}}</view><view class="yi">—</view><view class="experT">{{item.endTime}}</view></view>
+                    <view class="clear experJob">
+                        <view class="experComp">{{item.name}}</view>
+                        <view class="experPos">{{item.position}}</view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>
+<view class="goodAt">
+    <view class="title">擅长领域</view>
+    <view class="con">
+        <block wx:for="{{lawerMes.caseTypes}}" wx:key="index">
+            <view class="caseTypesT">{{item.name}}</view>
+        </block>
+    </view>
+</view>
+<view class="article">
+    <view class="title">他发表的文章</view>
+    <view class="con clear" bindtap="gotoArticles" > <view class="articleA">共{{lawerMes.articleTotal}}篇</view> <image hidden="{{lawerMes.articleTotal==0}}" class="path" src="../../images/Path.png"></image> </view>
+</view>
+<view class="contact" hover-class="contactH" bindtap="contactEvent">马上联系TA</view>

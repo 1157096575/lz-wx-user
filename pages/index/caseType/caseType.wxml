@@ -1,0 +1,9 @@
+<!--pages/index/caseType/caseType.wxml-->
+<view class="caseTypes">
+    <view class="caseTypes-title">案件类型</view>
+    <view class="caseTypes-list  clear">
+        <block wx:for="{{caseTypeList}}" wx:key="index">
+           <view class="caseTypeItem {{item.checked ? 'current' : ''}}" catchtap="chooseType" id="{{index}}">{{item.name}}</view>
+        </block>
+    </view>
+</view>

@@ -1,0 +1,22 @@
+<!--pages/index/hotLawer/hotLawer.wxml-->
+<block wx:for="{{hotLawerList}}" wx:key="index">
+    <navigator url="../lawerDetail/lawerDetail?lawyerId={{item.userId}}" class="lawerList">
+        <view class="listLeft">
+            <image src="{{item.logo}}"></image>
+        </view>
+        <view class="listRight">
+            <view class="lawerName">{{item.realName}}律师</view>
+            <view class="lawerMes"><text>地区：</text>{{item.address}}</view>
+            <view class="lawerMes"><text>职位：</text>{{item.position}}</view>
+            <view class="lawerMes field">
+                <text>擅长领域：</text>
+                <block wx:for="{{item.caseTypes}}"  wx:key="item.id">
+                    <view class="caseTypes">{{item.name}} </view>
+                </block>
+            </view>
+        </view>
+        <view class="state {{item.isWork? 'online':''}}">
+            <image src="{{item.isWork? '../../images/online.png':'../../images/offline.png'}}"></image>{{item.isWork? '在线':'离线'}}
+        </view>
+    </navigator>
+</block>

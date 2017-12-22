@@ -1,0 +1,23 @@
+<!--pages/index/articleDetail/articleDetail.wxml-->
+<view class="articleDetail">
+    <view class="articleTitle">{{articleData.title}}</view>
+    <view class="lawer">
+        <view class="lawerImg"><image mode="aspectFill" src="{{articleData.logo}}"></image></view>
+        <view class="lawerMes">
+            <view class="lawerName">{{articleData.realName}}律师</view>
+            <view class="time">{{articleData.publishTime}}</view>
+        </view>
+    </view>
+    <view class="readData clear">
+        <view class="read"><image src="../../images/read.png"></image>{{articleData.readNum?articleData.readNum:"阅读"}}</view>
+        <view class="like"><image src="../../images/like.png"></image>{{articleData.concernNum?articleData.concernNum:"点赞"}}</view>
+    </view>
+    <!--<view class="artiImg"><image mode="widthFix" src="../../images/artiImg.png"></image></view>暂时注销-->
+    <view class="content">
+        <import src="../../../utils/wxParse/wxParse.wxml"/> 
+        <view class="wxParse">
+            <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+        </view>
+    </view>
+</view>
+

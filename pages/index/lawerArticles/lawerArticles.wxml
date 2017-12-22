@@ -1,0 +1,26 @@
+<!--pages/index/lawerArticles/lawerArticles.wxml-->
+<view class="lawerHead">
+    <view class="headLeft">
+        <view><image mode="aspectFill" src="{{lawerLogo}}"></image></view>
+    </view>
+    <view class="headRight">
+        <view class="lawerName">{{lawerName}}律师</view>
+        <view class="lawerMes">{{lawerAdd}}</view>
+    </view>
+</view>
+<view class="tl">文章列表（共{{articleData.length}}篇）</view>
+<view wx:for="{{articleData}}" wx:key="index">
+    <view class="articles {{item.backGroundPic?'hasImg':''}}">
+        <navigator open-type="redirect" url="../articleDetail/articleDetail?articleId={{item.id}}">
+            <view class="title">{{item.title}}</view>
+            <view class="time">{{item.publishTime}}</view>
+            <view class="content">{{item.shortContent}}</view>
+            <image class="artiImg" mode="aspectFill" src="{{item.backGroundPic}}"></image>
+        </navigator>
+        <view class="readData clear">
+            <view class="read"><image src="../../images/read.png"></image>{{item.readNum?item.readNum:"阅读"}}</view>
+            <view class="like"><image src="../../images/like.png"></image>{{item.concernNum?item.concernNum:"点赞"}}</view>
+        </view>
+
+    </view>
+</view>
