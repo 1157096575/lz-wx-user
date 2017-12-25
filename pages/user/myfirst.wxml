@@ -39,7 +39,7 @@
 </view>
 
 <view class="footerWrap clear">
-  <navigator class="footer home" url="../index/one" open-type="redirect">
+  <navigator class="footer home" url="../slawyer/index" open-type="redirect">
     <image src="../images/tab_home_normal.png"></image>
     <view>首页</view>
   </navigator>

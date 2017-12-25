@@ -26,5 +26,5 @@
 .contact{width:750rpx;height: 86rpx; line-height: 86rpx;text-align: center;color: #ffffff;font-size: 36rpx;background: #01bafe;position: fixed; left:0; bottom:0;z-index: 1000;}
 .contactH{background: #21a6d7;}
 page{padding-bottom: 86rpx;}
-.hide{display: none;}
+.hide{display: nindex;}
 .caseTypesT{display: inline-block; margin-right: 10rpx;}

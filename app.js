@@ -39,7 +39,7 @@ App({
    onShareAppMessage: function () {
     return {
       title: '律正-用户版',
-      path: 'pages/index/one'
+      path: 'pages/index/index'
     }
   }
 });

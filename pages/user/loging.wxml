@@ -13,7 +13,7 @@
             <view class="con">
                      <label class="contenticon3">
                        <image src="../images/user-name.png"></image>
-                     </label><input type="number" placeholder="请输入账号" name="user" value="{{userphone}}" />
+                     </label><input type="number" placeholder="请输入账号" name="user" value="{{userphindex}}" />
             </view>
             <view class="con">
                      <label class="contenticon4">

@@ -6,7 +6,7 @@ var  md5 = require("../../utils/MD5.js");
 Page({
   data:{
     //如果是注册页面过来的拿到注册时用户输入的账号
-    userphone:"",
+    userphindex:"",
     userpwd:"",
     errorInfo:[]
   },
@@ -14,13 +14,13 @@ Page({
     var that = this;
     // 页面初始化 options为页面跳转所带来的参数
     this.setData({
-      userphone:options.userPhone
+      userphindex:options.userPhindex
     });     
     
      if(!that.checkedForm(wx.getStorageSync('userName'),wx.getStorageSync('userPwd')))
     {
         that.setData({
-          userphone:wx.getStorageSync('userName'),
+          userphindex:wx.getStorageSync('userName'),
           userpwd:wx.getStorageSync('userPwd')
         });
     }
@@ -61,9 +61,9 @@ Page({
       return true;
     }
   },
-  checkedPhone:function(phonenum){
+  checkedPhindex:function(phindexnum){
     var regex=new RegExp("^((1[0-9][0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\\d{8}$");
-     if(regex.test(phonenum)){
+     if(regex.test(phindexnum)){
         return false;
      }else{
        return true;
@@ -81,7 +81,7 @@ Page({
       return false;
     }
 
-    if(that.checkedPhone(loginInfo.user)){
+    if(that.checkedPhindex(loginInfo.user)){
       //验证电话号码
       that.errorShow("电话号码不正确");
       that.errorTimeOut();  

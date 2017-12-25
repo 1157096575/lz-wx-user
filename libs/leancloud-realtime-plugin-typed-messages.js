@@ -141,7 +141,7 @@
 
     var require$$0$9 = (_toInteger && typeof _toInteger === 'object' && 'default' in _toInteger ? _toInteger['default'] : _toInteger);
 
-    var _toIndex = createCommonjsModule(function (module) {
+    var _toindex = createCommonjsModule(function (module) {
     var toInteger = require$$0$9
       , max       = Math.max
       , min       = Math.min;
@@ -151,7 +151,7 @@
     };
     });
 
-    var require$$0$8 = (_toIndex && typeof _toIndex === 'object' && 'default' in _toIndex ? _toIndex['default'] : _toIndex);
+    var require$$0$8 = (_toindex && typeof _toindex === 'object' && 'default' in _toindex ? _toindex['default'] : _toindex);
 
     var _toLength = createCommonjsModule(function (module) {
     // 7.1.15 ToLength
@@ -180,18 +180,18 @@
     // true  -> Array#includes
     var toIObject = require$$2$2
       , toLength  = require$$1$5
-      , toIndex   = require$$0$8;
+      , toindex   = require$$0$8;
     module.exports = function(IS_INCLUDES){
-      return function($this, el, fromIndex){
+      return function($this, el, fromindex){
         var O      = toIObject($this)
           , length = toLength(O.length)
-          , index  = toIndex(fromIndex, length)
+          , index  = toindex(fromindex, length)
           , value;
         // Array#includes uses SameValueZero equality algorithm
         if(IS_INCLUDES && el != el)while(length > index){
           value = O[index++];
           if(value != value)return true;
-        // Array#toIndex ignores holes, Array#includes - not
+        // Array#toindex ignores holes, Array#includes - not
         } else for(;length > index; index++)if(IS_INCLUDES || index in O){
           if(O[index] === el)return IS_INCLUDES || index || 0;
         } return !IS_INCLUDES && -1;
@@ -213,7 +213,7 @@
     var _objectKeysInternal = createCommonjsModule(function (module) {
     var has          = require$$3$1
       , toIObject    = require$$2$2
-      , arrayIndexOf = require$$1$4(false)
+      , arrayindexOf = require$$1$4(false)
       , IE_PROTO     = require$$0$5('IE_PROTO');
 
     module.exports = function(object, names){
@@ -224,7 +224,7 @@
       for(key in O)if(key != IE_PROTO)has(O, key) && result.push(key);
       // Don't enum bug & hidden keys
       while(names.length > i)if(has(O, key = names[i++])){
-        ~arrayIndexOf(result, key) || result.push(key);
+        ~arrayindexOf(result, key) || result.push(key);
       }
       return result;
     };

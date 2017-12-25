@@ -18,6 +18,6 @@
 .readData .read image{width: 26rpx; height:18rpx;vertical-align: middle;margin-right: 5rpx;}
 .readData .like image{width:22rpx; height:21rpx;vertical-align: middle;margin-right: 5rpx;}
 .hasImg{padding-right: 275rpx;position: relative;}
-.artiImg{display: none;}
+.artiImg{display: nindex;}
 .hasImg .artiImg{width:210rpx;height:160rpx; position: absolute;top:25rpx;right:25rpx;display: block;}
 .content{font-size: 30rpx; color: #333333;text-align: justify;}

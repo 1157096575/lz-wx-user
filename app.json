@@ -1,15 +1,15 @@
 {
   "pages":[
-    "pages/index/one",
+    "pages/slawyer/index",
     "pages/user/myfirst",
     "pages/user/loging",
-    "pages/index/city/city",
-    "pages/index/caseType/caseType",
-    "pages/index/quickmatch/quickmatch",
-    "pages/index/lawyerDetail/lawyerDetail",
-    "pages/index/hotLawyer/hotLawyer",
-    "pages/index/lawyerArticles/lawyerArticles",
-    "pages/index/articleDetail/articleDetail"
+    "pages/slawyer/city/city",
+    "pages/slawyer/caseType/caseType",
+    "pages/slawyer/quickmatch/quickmatch",
+    "pages/slawyer/lawyerDetail/lawyerDetail",
+    "pages/slawyer/hotLawyer/hotLawyer",
+    "pages/slawyer/lawyerArticles/lawyerArticles",
+    "pages/slawyer/articleDetail/articleDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",
