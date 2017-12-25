@@ -1,11 +1,11 @@
-<!--pages/index/lawerArticles/lawerArticles.wxml-->
-<view class="lawerHead">
+<!--pages/index/lawyerArticles/lawyerArticles.wxml-->
+<view class="lawyerHead">
     <view class="headLeft">
-        <view><image mode="aspectFill" src="{{lawerLogo}}"></image></view>
+        <view><image mode="aspectFill" src="{{lawyerLogo}}"></image></view>
     </view>
     <view class="headRight">
-        <view class="lawerName">{{lawerName}}律师</view>
-        <view class="lawerMes">{{lawerAdd}}</view>
+        <view class="lawyerName">{{lawyerName}}律师</view>
+        <view class="lawyerMes">{{lawyerAdd}}</view>
     </view>
 </view>
 <view class="tl">文章列表（共{{articleData.length}}篇）</view>

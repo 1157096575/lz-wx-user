@@ -6,9 +6,9 @@
     "pages/index/city/city",
     "pages/index/caseType/caseType",
     "pages/index/quickmatch/quickmatch",
-    "pages/index/lawerDetail/lawerDetail",
-    "pages/index/hotLawer/hotLawer",
-    "pages/index/lawerArticles/lawerArticles",
+    "pages/index/lawyerDetail/lawyerDetail",
+    "pages/index/hotLawyer/hotLawyer",
+    "pages/index/lawyerArticles/lawyerArticles",
     "pages/index/articleDetail/articleDetail"
   ],
   "window":{

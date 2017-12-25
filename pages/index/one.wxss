@@ -6,22 +6,22 @@
 .titleWrap{padding: 10rpx 25rpx 0; height:80rpx; line-height: 70rpx;}
 .titleWrap .title{float: left; font-size: 32rpx;}
 .titleWrap .more{float: right; font-size: 24rpx; color: #01bafe;}
-.hotLawerListWrap{background: #ffffff;height: 290rpx;}
-.hotLawerList{width: 100%;white-space: nowrap;}
-.hotLawerList image{width: 180rpx; height:180rpx;}
-.hotLawerList .hotLawer{margin:0 25rpx; height: 290rpx; padding: 30rpx 0; width: 180rpx; display: inline-block;}
-.hotLawerList .hotLawer view{width: 180rpx; text-align: center;display: block;}
-.hotLawerList .hotLawerImg{width: 180rpx; height:180rpx; overflow: hidden; border-radius: 50%;}
-.hotLawerList .hotLawerName{font-size: 30rpx; margin:15rpx 0 10rpx;height:36rpx;}
-.hotLawerList .hotLawerPosi{font-size: 22rpx; color: #999999;height:40rpx;}
-.vipLawerListWrap{height: 250rpx;}
-.vipLawerList{width: 100%;white-space: nowrap;}
-.vipLawer{width: 270rpx; height: 250rpx; padding:30rpx 25rpx; background: #ffffff; margin-right: 10rpx;display: inline-block; text-align: center;}
-.vipLawer .vipLawerImg{width: 104rpx; height: 104rpx; border-radius: 50%; overflow: hidden; margin: 0 auto;}
-.vipLawer .vipLawerImg image{width: 104rpx; height: 104rpx; }
-.vipLawer .vipLawerText{padding-top: 20rpx; }
-.vipLawerName{font-size: 30rpx;text-overflow:ellipsis; white-space:nowrap; overflow:hidden; height:40rpx;}
-.vipLawerComp, .vipLawerPosi{font-size:22rpx; color: #999999; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;margin-top: 8rpx;height:26rpx;}
+.hotlawyerListWrap{background: #ffffff;height: 290rpx;}
+.hotlawyerList{width: 100%;white-space: nowrap;}
+.hotlawyerList image{width: 180rpx; height:180rpx;}
+.hotlawyerList .hotlawyer{margin:0 25rpx; height: 290rpx; padding: 30rpx 0; width: 180rpx; display: inline-block;}
+.hotlawyerList .hotlawyer view{width: 180rpx; text-align: center;display: block;}
+.hotlawyerList .hotlawyerImg{width: 180rpx; height:180rpx; overflow: hidden; border-radius: 50%;}
+.hotlawyerList .hotlawyerName{font-size: 30rpx; margin:15rpx 0 10rpx;height:36rpx;}
+.hotlawyerList .hotlawyerPosi{font-size: 22rpx; color: #999999;height:40rpx;}
+.viplawyerListWrap{height: 250rpx;}
+.viplawyerList{width: 100%;white-space: nowrap;}
+.viplawyer{width: 270rpx; height: 250rpx; padding:30rpx 25rpx; background: #ffffff; margin-right: 10rpx;display: inline-block; text-align: center;}
+.viplawyer .viplawyerImg{width: 104rpx; height: 104rpx; border-radius: 50%; overflow: hidden; margin: 0 auto;}
+.viplawyer .viplawyerImg image{width: 104rpx; height: 104rpx; }
+.viplawyer .viplawyerText{padding-top: 20rpx; }
+.viplawyerName{font-size: 30rpx;text-overflow:ellipsis; white-space:nowrap; overflow:hidden; height:40rpx;}
+.viplawyerComp, .viplawyerPosi{font-size:22rpx; color: #999999; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;margin-top: 8rpx;height:26rpx;}
 .footerWrap{width: 750rpx; height:98rpx;background: #ffffff;border-top: 1rpx solid #c3c3c3; padding-top: 12rpx;position: fixed; left:0; bottom: 0;}
 .footer{float: left;width: 250rpx; text-align: center;}
 .footer image{width: 48rpx; height:48rpx;}

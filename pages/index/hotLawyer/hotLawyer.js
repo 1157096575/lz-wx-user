@@ -1,12 +1,12 @@
-// pages/index/hotLawer/hotLawer.js
+// pages/index/hotlawyer/hotlawyer.js
 var app = getApp();
 var requestUrl = app.requestUrl;
 Page({
   data:{
-    hotLawerList: [
+    hotlawyerList: [
       {
         "userId": 123,
-        "logo": "../../images/my_oder_lawer-sestem.png",
+        "logo": "../../images/my_oder_lawyer-sestem.png",
         "realName": "郑",
         "address": "地区",
         "position": "职务",
@@ -25,7 +25,7 @@ Page({
       },
       {
         "userId": 123,
-        "logo": "../../images/my_oder_lawer-sestem.png",
+        "logo": "../../images/my_oder_lawyer-sestem.png",
         "realName": "郑",
         "address": "地区",
         "position": "职务",
@@ -44,7 +44,7 @@ Page({
       },
       {
         "userId": 123,
-        "logo": "../../images/my_oder_lawer-sestem.png",
+        "logo": "../../images/my_oder_lawyer-sestem.png",
         "realName": "郑",
         "address": "地区",
         "position": "职务",
@@ -63,7 +63,7 @@ Page({
       },
       {
         "userId": 123,
-        "logo": "../../images/my_oder_lawer-sestem.png",
+        "logo": "../../images/my_oder_lawyer-sestem.png",
         "realName": "郑",
         "address": "地区",
         "position": "职务",
@@ -102,9 +102,9 @@ Page({
       },
       success: function(res) {
 
-        var hotLawerList = res.data.data;
+        var hotlawyerList = res.data.data;
         that.setData({
-          hotLawerList:hotLawerList
+          hotlawyerList:hotlawyerList
         })
       }
     })

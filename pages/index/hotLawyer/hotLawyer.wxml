@@ -1,14 +1,14 @@
-<!--pages/index/hotLawer/hotLawer.wxml-->
-<block wx:for="{{hotLawerList}}" wx:key="index">
-    <navigator url="../lawerDetail/lawerDetail?lawyerId={{item.userId}}" class="lawerList">
+<!--pages/index/hotlawyer/hotlawyer.wxml-->
+<block wx:for="{{hotlawyerList}}" wx:key="index">
+    <navigator url="../lawyerDetail/lawyerDetail?lawyerId={{item.userId}}" class="lawyerList">
         <view class="listLeft">
             <image src="{{item.logo}}"></image>
         </view>
         <view class="listRight">
-            <view class="lawerName">{{item.realName}}律师</view>
-            <view class="lawerMes"><text>地区：</text>{{item.address}}</view>
-            <view class="lawerMes"><text>职位：</text>{{item.position}}</view>
-            <view class="lawerMes field">
+            <view class="lawyerName">{{item.realName}}律师</view>
+            <view class="lawyerMes"><text>地区：</text>{{item.address}}</view>
+            <view class="lawyerMes"><text>职位：</text>{{item.position}}</view>
+            <view class="lawyerMes field">
                 <text>擅长领域：</text>
                 <block wx:for="{{item.caseTypes}}"  wx:key="item.id">
                     <view class="caseTypes">{{item.name}} </view>

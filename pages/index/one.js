@@ -9,7 +9,7 @@ Page({
     hotLawyer: [
       {
         "userId": 123,
-        "logo":"../images/my_oder_lawer-sestem.png",
+        "logo":"../images/my_oder_lawyer-sestem.png",
         "realName": "郑阳律师",
         "address": "地区",
         "position": "执业律师",
@@ -28,7 +28,7 @@ Page({
       },
       {
         "userId": 123,
-        "logo": "../images/my_oder_lawer-sestem.png",
+        "logo": "../images/my_oder_lawyer-sestem.png",
         "realName": "郑阳律师",
         "address": "地区",
         "position": "执业律师",
@@ -47,7 +47,7 @@ Page({
       },
       {
         "userId": 123,
-        "logo": "../images/my_oder_lawer-sestem.png",
+        "logo": "../images/my_oder_lawyer-sestem.png",
         "realName": "郑阳律师",
         "address": "地区",
         "position": "执业律师",
@@ -66,7 +66,7 @@ Page({
       },
       {
         "userId": 123,
-        "logo": "../images/my_oder_lawer-sestem.png",
+        "logo": "../images/my_oder_lawyer-sestem.png",
         "realName": "郑阳律师",
         "address": "地区",
         "position": "执业律师",
@@ -87,7 +87,7 @@ Page({
     vipLawyer: [
       {
         "userId": 123,
-        "logo": "../images/my_oder_lawer-sestem.png",
+        "logo": "../images/my_oder_lawyer-sestem.png",
         "realName": "郑阳律师",
         "address": "地区",
         "position": "执业律师",
@@ -106,7 +106,7 @@ Page({
       },
       {
         "userId": 123,
-        "logo": "../images/my_oder_lawer-sestem.png",
+        "logo": "../images/my_oder_lawyer-sestem.png",
         "realName": "郑阳律师",
         "address": "地区",
         "position": "执业律师",
@@ -125,7 +125,7 @@ Page({
       },
       {
         "userId": 123,
-        "logo": "../images/my_oder_lawer-sestem.png",
+        "logo": "../images/my_oder_lawyer-sestem.png",
         "realName": "郑阳律师",
         "address": "地区",
         "position": "执业律师",
@@ -144,7 +144,7 @@ Page({
       },
       {
         "userId": 123,
-        "logo": "../images/my_oder_lawer-sestem.png",
+        "logo": "../images/my_oder_lawyer-sestem.png",
         "realName": "郑阳律师",
         "address": "地区",
         "position": "执业律师",

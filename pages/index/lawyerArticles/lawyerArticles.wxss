@@ -1,13 +1,13 @@
-/* pages/index/lawerArticles/lawerArticles.wxss */
-.lawerHead{width: 750rpx; background: #01bafe;padding: 40rpx 530rpx 40rpx 25rpx;color: #ffffff;position: relative;}
+/* pages/index/lawyerArticles/lawyerArticles.wxss */
+.lawyerHead{width: 750rpx; background: #01bafe;padding: 40rpx 530rpx 40rpx 25rpx;color: #ffffff;position: relative;}
 .headLeft{width:148rpx; height:148rpx; border-radius: 50%; border:4rpx solid #67d6fe;padding:6rpx;}
 .headLeft view{width: 100%; height:100%; border-radius: 50%; overflow: hidden;}
 .headLeft view image{width:100%;height:100%;}
 .headRight{position: absolute;top:50%; left:185rpx;transform: translateY(-50%);}
 .headLeft view{width: 100%; height:100%; border-radius: 50%; overflow: hidden;}
 .headLeft view image{width:100%;height:100%;}
-.headRight .lawerName{height:44rpx; line-height: 44rpx;font-size: 32rpx;}
-.headRight .lawerMes{min-height: 36rpx; line-height: 36rpx;}
+.headRight .lawyerName{height:44rpx; line-height: 44rpx;font-size: 32rpx;}
+.headRight .lawyerMes{min-height: 36rpx; line-height: 36rpx;}
 .tl{padding:35rpx 25rpx 25rpx; font-size: 30rpx; color: #666666;}
 .articles{padding:25rpx;background: #ffffff;border:1rpx solid #e5e5e5;border-left:0; border-right:0;margin-bottom: 30rpx;}
 .articles .title{font-size: 30rpx; color: #333333;padding-bottom: 15rpx;text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}

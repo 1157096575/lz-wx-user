@@ -1,10 +1,10 @@
-// pages/index/lawerArticles/lawerArticles.js
+// pages/index/lawyerArticles/lawyerArticles.js
 var app = getApp();
 var requestUrl = app.requestUrl;
 Page({
   data:{
-    lawerName:"",
-    lawerAdd:"",
+    lawyerName:"",
+    lawyerAdd:"",
     articleData:  [
       { "id": 0, "title": "房东恶意违约深漂损失近百万 小产权房还能租吗?", "publishTime": "2017-10-19 19:06:35", "backGroundPic": "http://resource.fy13322.com/config/article/8d7376d9722045d1a4a6045bc49e2016.jpg", "readNum": 72, "shortContent": "在深圳30多年的发展历程中，小产权房一直是一个无法抹去的烙印", "concernNum": 2, "realName": "赖智欣" }, 
       { "id":1, "title": "小心！公司“帮忙”开收入证明，却被告了，这事你怎么看？", "publishTime": "2017-10-19 19:01:06", "backGroundPic": "http://resource.fy13322.com/config/article/43107af6fce04abda73d11e77e0907cd.jpg", "readNum": 74, "shortContent": "具体案例如下： 一家广告公司给别人开出月工资15000元的收", "concernNum": 4, "realName": "赖智欣" }, 
@@ -15,26 +15,26 @@ Page({
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
     var that = this;
-    if(options.lawerAdd){
+    if(options.lawyerAdd){
       that.setData({
-          lawerAdd:options.lawerAdd
+          lawyerAdd:options.lawyerAdd
         })
     }
-    if(options.lawerName){
+    if(options.lawyerName){
       that.setData({
-          lawerName:options.lawerName
+          lawyerName:options.lawyerName
         })
     }
-    if(options.lawerLogo){
+    if(options.lawyerLogo){
       that.setData({
-          lawerLogo:options.lawerLogo
+          lawyerLogo:options.lawyerLogo
         })
     }
-    if(options.lawerId){
-      var lawerId = parseInt(options.lawerId);
+    if(options.lawyerId){
+      var lawyerId = parseInt(options.lawyerId);
       wx.request({
         url: requestUrl+"/user/article-list", 
-        data:{userId:lawerId},
+        data:{userId:lawyerId},
         header: {
             "content-type": "application/json",
             //'content-type': 'application/x-www-form-urlencoded', 

@@ -2,11 +2,11 @@
 @import "../../../utils/wxParse/wxParse.wxss";
 .articleDetail{padding:25rpx; background: #ffffff;}
 .articleTitle{font-size: 36rpx; color: #333333;text-align: justify;padding-bottom: 25rpx;}
-.lawer{padding-left: 85rpx; margin-bottom: 20rpx; position: relative;}
-.lawer .lawerImg{width: 60rpx; height:60rpx;border-radius: 50%;overflow: hidden; position: absolute; left:0; top:0;}
-.lawerImg image{width: 60rpx; height:60rpx;}
-.lawerMes .lawerName{font-size: 26rpx;height:46rpx; line-height: 46rpx;}
-.lawerMes .time{font-size: 20rpx; color: #999999;height:18rpx; line-height: 18rpx;}
+.lawyer{padding-left: 85rpx; margin-bottom: 20rpx; position: relative;}
+.lawyer .lawyerImg{width: 60rpx; height:60rpx;border-radius: 50%;overflow: hidden; position: absolute; left:0; top:0;}
+.lawyerImg image{width: 60rpx; height:60rpx;}
+.lawyerMes .lawyerName{font-size: 26rpx;height:46rpx; line-height: 46rpx;}
+.lawyerMes .time{font-size: 20rpx; color: #999999;height:18rpx; line-height: 18rpx;}
 .readData{padding-bottom: 25rpx;}
 .readData .read, .readData .like{float: left;font-size: 20rpx;}
 .readData .read{margin-right: 45rpx;}

@@ -1,10 +1,10 @@
 <!--pages/index/articleDetail/articleDetail.wxml-->
 <view class="articleDetail">
     <view class="articleTitle">{{articleData.title}}</view>
-    <view class="lawer">
-        <view class="lawerImg"><image mode="aspectFill" src="{{articleData.logo}}"></image></view>
-        <view class="lawerMes">
-            <view class="lawerName">{{articleData.realName}}律师</view>
+    <view class="lawyer">
+        <view class="lawyerImg"><image mode="aspectFill" src="{{articleData.logo}}"></image></view>
+        <view class="lawyerMes">
+            <view class="lawyerName">{{articleData.realName}}律师</view>
             <view class="time">{{articleData.publishTime}}</view>
         </view>
     </view>

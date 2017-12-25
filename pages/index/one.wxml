@@ -7,36 +7,36 @@
 </view>
 <view class="titleWrap clear">
   <view class="title">热门律师</view>
-  <navigator class="more" url="hotLawer/hotLawer?hotPageTitle=hotPageTitle"> 更多</navigator>
+  <navigator class="more" url="hotLawyer/hotLawyer?hotPageTitle=hotPageTitle"> 更多</navigator>
 </view>
-<view class="hotLawerListWrap">
-  <scroll-view class="hotLawerList clear" scroll-x="true" bindscroll="scroll">
+<view class="hotlawyerListWrap">
+  <scroll-view class="hotlawyerList clear" scroll-x="true" bindscroll="scroll">
     <block wx:for="{{hotLawyer}}" wx:key="index">
-      <navigator class="hotLawer" url="lawerDetail/lawerDetail?lawyerId={{item.userId}}">
-        <view class="hotLawerImg">
+      <navigator class="hotlawyer" url="lawyerDetail/lawyerDetail?lawyerId={{item.userId}}">
+        <view class="hotlawyerImg">
           <image mode="aspectFill" src="{{item.logo}}"></image>
         </view>
-        <view class="hotLawerName">{{item.realName}}</view>
-        <!--<view class="hotLawerPosi">律师主任{{item.position}}</view>-->
+        <view class="hotlawyerName">{{item.realName}}</view>
+        <!--<view class="hotlawyerPosi">律师主任{{item.position}}</view>-->
       </navigator>
     </block>
   </scroll-view>
 </view>
 <view class="titleWrap clear">
   <view class="title">VIP律师</view>
-  <navigator class="more" url="hotLawer/hotLawer?vipPageTitle=vipPageTitle"> 更多</navigator>
+  <navigator class="more" url="hotLawyer/hotLawyer?vipPageTitle=vipPageTitle"> 更多</navigator>
 </view>
-<view class="vipLawerListWrap">
-  <scroll-view class="vipLawerList clear" scroll-x="true" bindscroll="scroll">
+<view class="viplawyerListWrap">
+  <scroll-view class="viplawyerList clear" scroll-x="true" bindscroll="scroll">
     <block wx:for="{{vipLawyer}}" wx:key="index">
-      <navigator class="vipLawer" url="lawerDetail/lawerDetail?lawyerId={{item.userId}}">
-        <view class="vipLawerImg">
+      <navigator class="viplawyer" url="lawyerDetail/lawyerDetail?lawyerId={{item.userId}}">
+        <view class="viplawyerImg">
           <image mode="aspectFill" src="{{item.logo}}"></image>
         </view>
-        <view class="vipLawerText">
-          <view class="vipLawerName">{{item.realName}}</view>
-          <view class="vipLawerComp">{{item.position}}</view>
-          <!--<view class="vipLawerPosi">{{item.position}}</view>-->
+        <view class="viplawyerText">
+          <view class="viplawyerName">{{item.realName}}</view>
+          <view class="viplawyerComp">{{item.position}}</view>
+          <!--<view class="viplawyerPosi">{{item.position}}</view>-->
         </view>
       </navigator>
     </block>

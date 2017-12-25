@@ -29,7 +29,7 @@
                 <view>{{second}}</view>
             </view>
         </view>
-        <view class="searchLawer">
+        <view class="searchlawyer">
             <view class="searchD {{searchMT0? 'searchMT' : ''}}"><image src="../../images/match.png"></image>正在寻找合适的律师</view>
             <view class="searchD {{searchMT1? 'searchMT' : ''}}"><image src="../../images/match.png"></image>正在匹配律师接单</view>
             <view class="searchD {{searchMT2? 'searchMT' : ''}}"><image src="../../images/match.png"></image>匹配律师成功</view>
