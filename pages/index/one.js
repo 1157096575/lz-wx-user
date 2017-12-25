@@ -12,7 +12,7 @@ Page({
         "logo":"../images/my_oder_lawer-sestem.png",
         "realName": "郑阳律师",
         "address": "地区",
-        "position": "职务",
+        "position": "执业律师",
         "caseTypes": [     // 擅长类型
           {
             "id": 9,
@@ -31,7 +31,7 @@ Page({
         "logo": "../images/my_oder_lawer-sestem.png",
         "realName": "郑阳律师",
         "address": "地区",
-        "position": "职务",
+        "position": "执业律师",
         "caseTypes": [
           {
             "id": 9,
@@ -50,7 +50,7 @@ Page({
         "logo": "../images/my_oder_lawer-sestem.png",
         "realName": "郑阳律师",
         "address": "地区",
-        "position": "职务",
+        "position": "执业律师",
         "caseTypes": [     // 擅长类型
           {
             "id": 9,
@@ -69,7 +69,7 @@ Page({
         "logo": "../images/my_oder_lawer-sestem.png",
         "realName": "郑阳律师",
         "address": "地区",
-        "position": "职务",
+        "position": "执业律师",
         "caseTypes": [
           {
             "id": 9,
@@ -90,7 +90,7 @@ Page({
         "logo": "../images/my_oder_lawer-sestem.png",
         "realName": "郑阳律师",
         "address": "地区",
-        "position": "职务",
+        "position": "执业律师",
         "caseTypes": [     // 擅长类型
           {
             "id": 9,
@@ -109,7 +109,7 @@ Page({
         "logo": "../images/my_oder_lawer-sestem.png",
         "realName": "郑阳律师",
         "address": "地区",
-        "position": "职务",
+        "position": "执业律师",
         "caseTypes": [
           {
             "id": 9,
@@ -128,7 +128,7 @@ Page({
         "logo": "../images/my_oder_lawer-sestem.png",
         "realName": "郑阳律师",
         "address": "地区",
-        "position": "职务",
+        "position": "执业律师",
         "caseTypes": [     // 擅长类型
           {
             "id": 9,
@@ -147,7 +147,7 @@ Page({
         "logo": "../images/my_oder_lawer-sestem.png",
         "realName": "郑阳律师",
         "address": "地区",
-        "position": "职务",
+        "position": "执业律师",
         "caseTypes": [
           {
             "id": 9,
