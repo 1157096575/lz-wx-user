@@ -25,82 +25,67 @@ Page({
         });
     }
   },
-   errorShow:function(info)
-  {
+  errorShow:function(info){
     //显示错误信息的方法
     this.setData({
       errorInfo:[info]
     });
-  },    ////////////////////////////////验证部分
-  errtimenull:function()
-  {
-    //清空错误信息数组的方法----因为小程序无法操控dom节点，此方法必须
+  },
+  //验证部分
+  errtimenull:function(){
+    //清空错误信息数组的方法
       this.setData({
       errorInfo:[]
     });
   },
-  errorTimeOut:function()
-  {
+  errorTimeOut:function(){
     //信息暂留时间为2S
     var that=this;
       setTimeout(function(){
         that.errtimenull();
       },2000);
   },
-  checkedForm:function(...formsj)
-  {
+  checkedForm:function(...formsj){
     //验证空值
-    for(var i=0;i<formsj.length;i++)
-    {
-
-      if(formsj[i]==""||formsj[i]==undefined||formsj[i]==null)
-      {
-          return true;
+    for(var i=0;i<formsj.length;i++){
+      if(formsj[i]==""||formsj[i]==undefined||formsj[i]==null){
+        return true;
       }
     }
   },
-  checkedPwd:function(pwd1,pwd2)
-  {
+  checkedPwd:function(pwd1,pwd2){
     //验证密码
-    if(pwd1==pwd2)
-    {
+    if(pwd1==pwd2){
       return false;
     }else{
       return true;
     }
   },
-  checkedPhone:function(phonenum)
-  {
-
+  checkedPhone:function(phonenum){
     var regex=new RegExp("^((1[0-9][0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\\d{8}$");
-     if(regex.test(phonenum))
-     {
+     if(regex.test(phonenum)){
         return false;
      }else{
        return true;
      }
-  },/////////////////////////////////验证部分
-  logingUser:function(res)
-  {
-
+  },
+  logingUser:function(res){
     //登录接口
-    var   that = this;
-    var   loginInfo = res.detail.value;                             //获取用户登录信息数组数据
+    var  that = this;
+    var  loginInfo = res.detail.value;  //获取用户登录信息数组数据
     //将密码进行MD5加密
-    var   pwd = md5.hexMD5(loginInfo.pwd).toString().toUpperCase();
-      if(that.checkedForm(loginInfo.user,loginInfo.pwd))
-    {
-       that.errorShow("请将信息填写完整");
-       that.errorTimeOut();    
-        return false;
+    var pwd = md5.hexMD5(loginInfo.pwd).toString().toUpperCase();
+    if(that.checkedForm(loginInfo.user,loginInfo.pwd)){
+      that.errorShow("请将信息填写完整");
+      that.errorTimeOut();    
+      return false;
     }
 
-    if(that.checkedPhone(loginInfo.user))
-    {
+    if(that.checkedPhone(loginInfo.user)){
       //验证电话号码
-        that.errorShow("电话号码不正确");
-        that.errorTimeOut();  
-        return false;
+      that.errorShow("电话号码不正确");
+      that.errorTimeOut();  
+      return false;
     }
     //发起登录请求
     wx.request({
@@ -114,11 +99,10 @@ Page({
          "Content-Type": "application/x-www-form-urlencoded"
       }, // 设置请求的 header
       success: function(res){
-         that.errorShow(res.data.msg);
-         that.errorTimeOut(); 
-         setTimeout(function(){
-          if(res.data.code==1)
-          {
+        that.errorShow(res.data.msg);
+        that.errorTimeOut(); 
+        setTimeout(function(){
+          if(res.data.code==1){
              // success
           app.myhead=res.data.data.logo;
           app.myId=res.data.data.id;      //自身ID
@@ -126,18 +110,17 @@ Page({
             //1.如果登录成功，将账号密码永久储存
             //首次登陆获取token
             app.token=res.data.token;
-            app.yesorno=true;             //已经登录了
+            app.yesorno=true;   //已经登录了
             wx.setStorageSync('userName',loginInfo.user);    
             wx.setStorageSync('userPwd',loginInfo.pwd);
             wx.redirectTo({
-             url: 'myfirst'          //登录成功跳转至首页
+             url: 'myfirst'
            });
-         
-         }else{
-          //登录失败
-          return false;
-         }
-         },2000);
+          }else{
+            //登录失败
+            return false;
+          }
+        },2000);
       }
     })
   }

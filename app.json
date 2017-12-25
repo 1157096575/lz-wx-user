@@ -4,8 +4,6 @@
     "pages/user/myfirst",
     "pages/user/loging",
     "pages/index/city/city",
-    "pages/mes/mes",
-    "pages/mes/systemInfo",
     "pages/index/caseType/caseType",
     "pages/index/quickmatch/quickmatch",
     "pages/index/lawerDetail/lawerDetail",
